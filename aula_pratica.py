@@ -51,12 +51,30 @@ class rato(animal):
     def falar(self):
         print('squik squik squik')
         
+class golfinho(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print('eek eek eek')
+        
+class cobra(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print('tssssssssss')
+        
 meus_animais = [
     cachorro('cachorro', 2, 'poodle'), 
     gato('gato', 3, "vira-lata"), 
     galinha('galinha', 1, "d'angola"),
     pinguim('pinguim', 1, "pinguim-imperador"),
-    rato('rato', 3 ,'gerbil')]
+    rato('rato', 3 ,'gerbil'),
+    golfinho('golfinho', 12, 'golfinho bico de garrafa'),
+    cobra('cobra', 12, 'cobra-coral')]
 
 
 for animal in meus_animais:
