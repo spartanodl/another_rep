@@ -1,0 +1,66 @@
+class animal:
+    def __init__(self, especie, idade):
+        self.especie = especie
+        self.idade = idade
+        
+    def apresentar(self):
+        print(f'Espécie: {self.especie}')
+        print(f'Idade: {self.idade}')
+        
+    def falar(self):
+        print("som generico")
+        
+class cachorro(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+        
+    def falar(self):
+        print("au au au")
+        
+class gato(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print("miau miau miau")
+        
+class galinha(animal):
+    def __init__(self, especie, idade, raca,):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print("coco coco coco")
+        
+class pinguim(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print('gnaw gnaw gnaw')
+        
+class rato(animal):
+    def __init__(self,especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print('squik squik squik')
+        
+meus_animais = [
+    cachorro('cachorro', 2, 'poodle'), 
+    gato('gato', 3, "vira-lata"), 
+    galinha('galinha', 1, "d'angola"),
+    pinguim('pinguim', 1, "pinguim-imperador"),
+    rato('rato', 3 ,'gerbil')]
+
+
+for animal in meus_animais:
+    animal.apresentar()
+    animal.falar()
+    print('_' * 15)
+    
