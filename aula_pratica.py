@@ -67,6 +67,30 @@ class cobra(animal):
     def falar(self):
         print('tssssssssss')
         
+class urso(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print('hur hur hur')
+        
+class passaros(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print('tweet tweet tweet')
+        
+class abelhas(animal):
+    def __init__(self, especie, idade, raca):
+        super().__init__(especie, idade)
+        self.raca = raca
+        
+    def falar(self):
+        print("bzzz bzzz bzzz")
+        
 meus_animais = [
     cachorro('cachorro', 2, 'poodle'), 
     gato('gato', 3, "vira-lata"), 
@@ -74,7 +98,10 @@ meus_animais = [
     pinguim('pinguim', 1, "pinguim-imperador"),
     rato('rato', 3 ,'gerbil'),
     golfinho('golfinho', 12, 'golfinho bico de garrafa'),
-    cobra('cobra', 12, 'cobra-coral')]
+    cobra('cobra', 12, 'cobra-coral'),
+    urso('urso', 12, 'urso-pardo'),
+    passaros('passaro', 12, 'bem-te-vi'),
+    abelhas('abelha', 12, 'abelha-domestica comum')]
 
 
 for animal in meus_animais:
